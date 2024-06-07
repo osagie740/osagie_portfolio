@@ -425,6 +425,7 @@ img{
 
 /* Responsivness  */
 
+
 @media only screen and (max-width: 850px){
     #btn{
         display: block;
@@ -446,10 +447,11 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        display: none;
     }
 
     header ul.show{
-        display: none;
+        display: flex;
     }
 
     .s-container{
@@ -480,3 +482,13 @@ img{
         transform: translateX(-50%);
     }
 }
+
+/* JavaScript to toggle the navigation menu on mobile */
+document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('btn');
+    const nav = document.querySelector('header ul');
+
+    btn.addEventListener('click', function() {
+        nav.classList.toggle('show');
+    });
+});
