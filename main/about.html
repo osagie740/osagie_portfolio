@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - osagie's Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                Osagie
+            </h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button id="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <div class="s-container">
+            <div class="content">
+                <h1 class="about-title">About Me</h1>
+                <p class="about-description"><b>Hello! I'm Osagie</b></p>
+                <h2 >Front-End </h2>
+                <p class="about-description">
+                    On the front-end, I wield HTML, CSS, and JavaScript like a magician's wand. I can transform static pages into dynamic, interactive experiences that captivate users. Whether it's building user interfaces that are as visually appealing as they are intuitive, or implementing creative animations and effects, I'm in my element.
+                </p>
+                    <h2>Back-End </h2>
+                    <p class="about-description">
+
+                        But my talents extend beyond the visual realm. I'm also well-versed in back-end technologies like PHP and the Laravel framework. This allows me to build the robust foundation that powers any successful web application.  E-commerce websites? Absolutely! I've developed several that have thrived thanks to my ability to create secure and scalable back-end systems.
+                    
+                    </p>
+                    
+                   <h2> Let's Build Something Amazing Together</h2>
+                    <p class="about-description">
+                   `My design background fuels my passion for creating user-centric experiences.  I've had the opportunity to work on a wide range of projects, from sleek and functional mobile apps to engaging and interactive website interfaces.  No matter the challenge, I'm always eager to learn and grow, pushing the boundaries of what's possible on the web.
+
+                   Are you ready to collaborate and build something amazing together? Let's connect and discuss your project!
+                    </p>
+                <p class="about-description"></p>
+                <p class="about-description">Thank you for visiting my portfolio. If you'd like to learn more about my work or discuss a potential project, feel free to get in touch!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Osagie. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+            document.querySelector("header ul").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
